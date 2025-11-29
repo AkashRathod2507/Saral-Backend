@@ -1,0 +1,233 @@
+{
+  "generatedAt": "2025-11-27T09:17:25.848Z",
+  "metadata": {
+    "Attendance": {
+      "numeric": [
+        "__v"
+      ],
+      "dates": [
+        "date",
+        "checkIn",
+        "checkOut",
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "Counter": {
+      "numeric": [
+        "seq",
+        "__v"
+      ],
+      "dates": [
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "Customer": {
+      "numeric": [
+        "__v"
+      ],
+      "dates": [
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "Employee": {
+      "numeric": [
+        "salary",
+        "__v"
+      ],
+      "dates": [
+        "joiningDate",
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "GstReturn": {
+      "numeric": [
+        "total_taxable_value",
+        "total_tax",
+        "total_cess",
+        "gross_turnover",
+        "payments_received",
+        "outstanding_tax_liability",
+        "total_invoices",
+        "total_transactions",
+        "__v"
+      ],
+      "dates": [
+        "period_start",
+        "period_end",
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "Invoice": {
+      "numeric": [
+        "subTotal",
+        "taxAmount",
+        "cgstTotal",
+        "sgstTotal",
+        "igstTotal",
+        "discountTotal",
+        "shippingCharge",
+        "grandTotal",
+        "amountPaid",
+        "balanceDue",
+        "__v"
+      ],
+      "dates": [
+        "invoiceDate",
+        "dueDate",
+        "paymentDate",
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "InvoiceV2": {
+      "numeric": [
+        "amountDue",
+        "__v"
+      ],
+      "dates": [
+        "dueDate",
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "Item": {
+      "numeric": [
+        "unit_price",
+        "stock_quantity",
+        "tax_rate",
+        "__v"
+      ],
+      "dates": [
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "LineItem": {
+      "numeric": [
+        "quantity",
+        "priceAtTimeOfPurchase",
+        "subtotal",
+        "__v"
+      ],
+      "dates": [
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "Order": {
+      "numeric": [
+        "totalAmount",
+        "__v"
+      ],
+      "dates": [
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "Organization": {
+      "numeric": [
+        "gst_settings.filingDayOfMonth",
+        "__v"
+      ],
+      "dates": [
+        "gst_settings.lastFiledAt",
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "Payment": {
+      "numeric": [
+        "amount_received",
+        "__v"
+      ],
+      "dates": [
+        "payment_date",
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "Product": {
+      "numeric": [
+        "__v"
+      ],
+      "dates": [
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "ProductVariant": {
+      "numeric": [
+        "price.retail",
+        "price.wholesale",
+        "stockQuantity",
+        "__v"
+      ],
+      "dates": [
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "StockMovement": {
+      "numeric": [
+        "quantity_change",
+        "__v"
+      ],
+      "dates": [
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "Supplier": {
+      "numeric": [
+        "__v"
+      ],
+      "dates": [
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "Transaction": {
+      "numeric": [
+        "amount",
+        "__v"
+      ],
+      "dates": [
+        "payment_date",
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    },
+    "User": {
+      "numeric": [
+        "__v"
+      ],
+      "dates": [
+        "createdAt",
+        "updatedAt"
+      ],
+      "hasTimestamps": true
+    }
+  }
+}

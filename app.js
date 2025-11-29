@@ -11,16 +11,9 @@ const limiter = rateLimit({
     max: 100 // limit each IP to 100 requests per windowMs
 });
 
-const corsOrigins = (CORS_ORIGIN || '').split(',').map((entry) => entry.trim()).filter(Boolean);
+// Allow all origins if CORS_ORIGIN is "*", otherwise use whitelist
 const corsOptions = {
-    origin(origin, callback) {
-        if (!origin) return callback(null, true);
-        if (corsOrigins.length && corsOrigins[0] !== '*') {
-            if (corsOrigins.includes(origin)) return callback(null, true);
-            return callback(new Error('CORS policy: This origin is not allowed'));
-        }
-        return callback(null, true);
-    },
+    origin: CORS_ORIGIN === '*' ? true : CORS_ORIGIN.split(',').map(s => s.trim()),
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
